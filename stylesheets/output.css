@@ -1,9 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-html * {
   box-sizing: border-box;
 }
 
@@ -17,7 +14,7 @@ body {
   z-index: 1;
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
-  line-height: 2.2rem;
+  line-height: 3rem;
   font-weight: 400;
   overflow-x: hidden;
 }
@@ -28,6 +25,7 @@ h1 {
   font-weight: 400;
   color: #ffffff;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -37,6 +35,7 @@ h2 {
   color: #7b6c63;
   text-align: center;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -45,6 +44,7 @@ h3 {
   font-weight: 500;
   color: #7b6c63;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -53,10 +53,55 @@ h4 {
   font-weight: 400;
   color: #363636;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 h4.footer-heading {
   font: 1.8rem/2.5rem "Raleway", sans-serif;
   letter-spacing: 2px;
+}
+
+h5 {
+  font: 1.4rem/2.4rem "Raleway", sans-serif;
+  margin: 0 0 25px;
+  font-weight: 400;
+  color: #ccc;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h6 {
+  font: 1.4rem/2.4rem "Raleway", sans-serif;
+  margin: 0 0 25px;
+  font-weight: 400;
+  color: #ccc;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:active, a:hover {
+  color: #ffffff;
+}
+
+p, ul, ol, dl, table, hr, pre, blockquote {
+  margin: 0 0 30px;
+  line-height: 3rem;
+}
+
+textarea {
+  resize: none;
+  height: 150px;
+}
+
+section {
+  padding: 80px 0px;
 }
 
 .container {
@@ -64,6 +109,135 @@ h4.footer-heading {
   max-width: 1230px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.main-text {
+  font-size: 1.8rem;
+}
+
+.secondary-text {
+  line-height: 2.4rem;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 2.4rem;
+}
+
+.btn {
+  display: inline-block;
+  width: 170px;
+  height: 50px;
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid #000000;
+  text-transform: uppercase;
+}
+.btn-showcase {
+  width: 265px;
+  height: 60px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 5px;
+}
+.btn-submit {
+  width: 170px;
+  height: 45px;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+nav {
+  background-color: rgba(48, 48, 48, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo {
+  font-family: "Oleo Script", cursive;
+  font-size: 4.8rem;
+}
+
+.nav-logo {
+  color: #ffffff;
+}
+
+.nav-wrapper {
+  min-height: 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 22px;
+  position: relative;
+}
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #7b6c63;
+}
+
+.showcase {
+  min-height: 674px;
+}
+
+.showcase-wrapper {
+  min-height: 594px;
+}
+
+.showcase {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.showcase::after {
+  content: "XXXXXXXxx";
+  position: absolute;
+  top: -95px;
+  left: 0;
+  width: 100%;
+  height: 769px;
+  background-image: url("../img/showcase-bg-2.png");
+  z-index: -3;
+}
+
+.showcase-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.showcase-lead {
+  display: inline-block;
+  font-size: 2.4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.lead {
+  color: #7b6c63;
 }
 
 /*# sourceMappingURL=output.css.map */
