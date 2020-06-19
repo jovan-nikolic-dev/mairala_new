@@ -1,0 +1,26 @@
+/*General styles*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=output.css.map */
