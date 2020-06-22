@@ -151,8 +151,15 @@ section {
   margin: 0 auto;
 }
 
-.no-margin {
-  margin: 0;
+.container-narrow {
+  width: 100%;
+  max-width: 1030px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .main-text {
@@ -191,6 +198,9 @@ section {
   font-size: 1.8rem;
   text-transform: capitalize;
   font-weight: 500;
+}
+.btn i {
+  margin-left: 10px;
 }
 
 .bottom-line {
@@ -268,11 +278,11 @@ nav {
 }
 
 .showcase {
-  min-height: 674px;
+  min-height: 754px;
 }
 
 .showcase-wrapper {
-  min-height: 594px;
+  min-height: 674px;
 }
 
 .showcase::after {
@@ -307,6 +317,59 @@ nav {
 
 .lead {
   color: #7b6c63;
+}
+
+.about-wrapper {
+  padding: 80px 0;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+.about-wrapper .text-content {
+  width: 50%;
+}
+
+.img-div {
+  background-image: url("https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+}
+
+.cover-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1000%;
+  width: 1000%;
+  transform-origin: top left;
+  transform: rotate(70deg);
+  background-color: #f5f5f5;
+}
+
+.services p {
+  max-width: 1030px;
+}
+
+.services-wrapper {
+  display: flex;
+}
+
+.services-wrapper .service-box {
+  text-align: center;
+  width: calc(100% / 3);
+  padding: 0 30px;
 }
 
 /*# sourceMappingURL=output.css.map */
