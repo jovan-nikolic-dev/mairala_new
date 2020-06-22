@@ -153,6 +153,10 @@ section {
   font-weight: 500;
 }
 
+header {
+  position: relative;
+}
+
 nav {
   background-color: rgba(48, 48, 48, 0.5);
   position: fixed;
@@ -164,6 +168,7 @@ nav {
 .logo {
   font-family: "Oleo Script", cursive;
   font-size: 4.8rem;
+  transition: 0.4s;
 }
 
 .nav-logo {
@@ -171,10 +176,11 @@ nav {
 }
 
 .nav-wrapper {
-  min-height: 95px;
+  padding: 16px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.4s;
 }
 
 .nav-link {
@@ -202,21 +208,17 @@ nav {
   min-height: 594px;
 }
 
-.showcase {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
 .showcase::after {
   content: "XXXXXXXxx";
   position: absolute;
   top: -95px;
   left: 0;
   width: 100%;
-  height: 769px;
+  height: 100%;
   background-image: url("../img/showcase-bg-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   z-index: -3;
 }
 
