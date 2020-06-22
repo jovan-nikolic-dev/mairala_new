@@ -104,6 +104,46 @@ section {
   padding: 80px 0px;
 }
 
+.p0 {
+  padding: 0;
+}
+
+.pt0 {
+  padding-top: 0;
+}
+
+.pr0 {
+  padding-right: 0;
+}
+
+.pb0 {
+  padding-bottom: 0;
+}
+
+.pl0 {
+  padding-left: 0;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mr0 {
+  margin-right: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.ml0 {
+  margin-left: 0;
+}
+
 .container {
   width: 100%;
   max-width: 1230px;
@@ -153,16 +193,43 @@ section {
   font-weight: 500;
 }
 
+.bottom-line {
+  position: relative;
+  padding-bottom: 40px;
+}
+.bottom-line::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: calc(50% - 38px);
+  width: 76px;
+  height: 3px;
+  background: #7b6c63;
+}
+
+.section-lead {
+  text-align: center;
+}
+
+.section-lead p {
+  max-width: 500px;
+  margin: auto;
+  font-size: 18px;
+  margin-bottom: 80px;
+}
+
 header {
   position: relative;
 }
 
 nav {
   background-color: rgba(48, 48, 48, 0.5);
+  transition: background-color 0.4s;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 
 .logo {
@@ -213,8 +280,8 @@ nav {
   position: absolute;
   top: -95px;
   left: 0;
+  bottom: 0;
   width: 100%;
-  height: 100%;
   background-image: url("../img/showcase-bg-2.png");
   background-repeat: no-repeat;
   background-size: cover;
