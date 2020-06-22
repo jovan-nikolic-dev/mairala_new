@@ -211,21 +211,23 @@ section {
   position: absolute;
   content: "";
   bottom: 0;
-  left: calc(50% - 38px);
+  left: 50%;
+  transform: translateX(-50%);
   width: 76px;
   height: 3px;
   background: #7b6c63;
 }
 
-.section-lead {
+.section-lead,
+.section-lead-small {
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .section-lead p {
   max-width: 500px;
   margin: auto;
   font-size: 18px;
-  margin-bottom: 80px;
 }
 
 header {
@@ -240,12 +242,18 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
+  transition-delay: 0.2s;
 }
 
 .logo {
-  font-family: "Oleo Script", cursive;
-  font-size: 4.8rem;
   transition: 0.4s;
+  transition-delay: 0.2s;
+  height: 38px;
+  transform: scale(0.8);
+}
+
+.logo img {
+  height: 100%;
 }
 
 .nav-logo {
@@ -258,6 +266,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   transition: 0.4s;
+  transition-delay: 0.2s;
 }
 
 .nav-link {
@@ -281,10 +290,6 @@ nav {
   min-height: 754px;
 }
 
-.showcase-wrapper {
-  min-height: 674px;
-}
-
 .showcase::after {
   content: "XXXXXXXxx";
   position: absolute;
@@ -300,8 +305,14 @@ nav {
 }
 
 .showcase-wrapper {
+  min-height: 674px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   flex-direction: column;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -370,6 +381,64 @@ nav {
   text-align: center;
   width: calc(100% / 3);
   padding: 0 30px;
+}
+
+.service-box i {
+  height: 30px;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
 }
 
 /*# sourceMappingURL=output.css.map */
