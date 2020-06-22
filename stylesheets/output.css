@@ -390,6 +390,7 @@ nav {
 .flex-wrapper {
   display: flex;
   flex-flow: wrap;
+  justify-content: center;
 }
 
 .single-chart {
