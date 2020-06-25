@@ -375,10 +375,6 @@ nav {
   position: relative;
 }
 
-.showcase {
-  min-height: 754px;
-}
-
 .showcase::after {
   content: "XXXXXXXxx";
   position: absolute;
@@ -394,6 +390,7 @@ nav {
 }
 
 .showcase-wrapper {
+  margin-top: 95px;
   min-height: 674px;
   display: -webkit-flex;
   display: -moz-flex;
