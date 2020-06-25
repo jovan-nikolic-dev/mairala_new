@@ -7,7 +7,7 @@ window.onscroll = function() {
 }
 
 function scrollFunction() {
-	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+	if (document.body.scrollTop > 95 || document.documentElement.scrollTop > 95) {
 		navWrapper.style.minHeight = "60px";
 		logo.style.height = "27px";
 		nav.style.backgroundColor = "rgba(48, 48, 48, 1)";
