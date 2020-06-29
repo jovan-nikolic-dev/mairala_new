@@ -155,6 +155,11 @@ section {
   margin-bottom: 0;
 }
 
+.my-90 {
+  margin-bottom: 90px;
+  margin-top: 90px;
+}
+
 .container {
   width: 100%;
   max-width: 1230px;
@@ -374,9 +379,12 @@ nav {
   margin: 0 22px;
   position: relative;
 }
+.nav-link:last-child {
+  margin-right: 0;
+}
 
 .showcase::after {
-  content: "XXXXXXXxx";
+  content: "";
   position: absolute;
   top: -95px;
   left: 0;
